@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+/* colorscheme 3A3042 7D8491 D7EBBA FEFFBE EE7674*/
+:root {
+  --background: #3a3042;
+  --grey: #7d8491;
+  --green: #D7EBBA;
+  --light: #FEFFBE;
+  --red: #EE7674;
+
+}
+
+body {
+  background-color: #3a3042;
+}

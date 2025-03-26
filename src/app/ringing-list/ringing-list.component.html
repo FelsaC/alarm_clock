@@ -1,0 +1,9 @@
+<div>
+  <ul class="ringingAlarmList">
+    <li *ngFor="let item of ringingService.ringingList; let index = index">
+      {{item.name}} {{ item.timeToRing | date : "short" }}
+      <button (click)="dismiss(index)"> desativar </button>
+    </li>
+  </ul>
+  <button *ngIf="ringingService.ringingList.length > 1" (click)="clear()"> Clear all</button>
+</div>

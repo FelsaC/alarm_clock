@@ -1,0 +1,14 @@
+<div>
+  <form [formGroup]="applyAlarm" (submit)="newAlarm()">
+    <input type="text" formControlName="name"/>
+    <input type="datetime-local" formControlName="time" />
+    <button type="submit">Novo alarme</button>
+  </form>
+  <ul class="alarmList">
+    <li *ngFor="let alarm of alarmsService.alarmsList; let index = index">
+      {{alarm.name}} {{ alarm.timeToRing | date : "short" }}
+      <button (click)="delete(index)"> X </button>
+    </li>
+
+  </ul>
+</div>

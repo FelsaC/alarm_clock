@@ -1,0 +1,5 @@
+.mainSection {
+  max-width: 500px;
+  margin: auto;
+  color: var(--light);
+}
