@@ -1,5 +1,12 @@
 .mainSection {
   max-width: 500px;
   margin: auto;
+  margin-top: 120px;
   color: var(--light);
+}
+.timepicker-overlay{
+  z-index: 999999999 !important; /* overlay alarm modal*/
+}
+.timepicker-backdrop-overlay {
+  z-index: 999999999 !important;
 }

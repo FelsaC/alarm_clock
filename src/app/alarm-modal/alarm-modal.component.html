@@ -1,0 +1,10 @@
+<mat-dialog-content >
+  <mat-calendar [(selected)]="selectedDay"></mat-calendar>
+  <input [ngxTimepicker]="picker" [format]="24" placeholder="Horas">
+  <ngx-material-timepicker #picker ></ngx-material-timepicker>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
