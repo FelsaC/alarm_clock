@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { AlarmsService } from '../alarms.service';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup} from '@angular/forms';
 import { AlarmModalComponent } from '../alarm-modal/alarm-modal.component';
 import { MatDialog } from '@angular/material/dialog';
 
@@ -31,6 +31,6 @@ export class ListComponent {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(AlarmModalComponent);
+    const dialogRef = this.dialog.open(AlarmModalComponent, {minWidth: '300px'});
   }
 }

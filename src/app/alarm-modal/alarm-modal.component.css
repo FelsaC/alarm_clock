@@ -1,1 +1,41 @@
 
+.custom-class-picker {
+  .timepicker-dial {
+    background-color: brown;
+  }
+}
+
+.dark-backgroud {
+  background-color: var(--background);
+  
+}
+
+.cancelButton {
+
+}
+
+.addButton {
+}
+
+.alarmDialogButton {
+  background-color: transparent;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #AAA;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+}
+
+.alarmDialogButton:hover {
+  background-color: #FFFFFF22;
+}
+
+.timeInputAlarm {
+  background-color: transparent;
+  font-size: 30px;
+  border: none;
+  color: var(--light)
+}

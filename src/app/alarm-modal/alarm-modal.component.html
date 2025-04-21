@@ -1,10 +1,32 @@
-<mat-dialog-content >
-  <mat-calendar [(selected)]="selectedDay"></mat-calendar>
-  <input [ngxTimepicker]="picker" [format]="24" placeholder="Horas">
-  <ngx-material-timepicker #picker ></ngx-material-timepicker>
-
+<mat-dialog-content [ngClass]="{ 'dark-backgroud': true }">
+  <form [formGroup]="applyAlarm">
+    <input type="text" formControlName="name" />
+    <mat-calendar [(selected)]="selectedDay" />
+    <input
+      readonly
+      class="timeInputAlarm"
+      [ngxTimepicker]="picker"
+      [format]="24"
+      placeholder="HH:MM Horas 🕐"
+      formControlName="time"
+    />
+    <ngx-material-timepicker [theme]="alarmClock" #picker />
+  </form>
 </mat-dialog-content>
-<mat-dialog-actions align="end">
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+<mat-dialog-actions [ngClass]="{ 'dark-backgroud': true }" align="end">
+  <button
+    mat-button
+    mat-dialog-close
+    [ngClass]="['cancelButton', 'alarmDialogButton']"
+  >
+    CANCEL
+  </button>
+  <button
+    mat-button
+    cdkFocusInitial
+    (click)="newAlarm()"
+    [ngClass]="['addButton', 'alarmDialogButton']"
+  >
+    ADD ALARME
+  </button>
 </mat-dialog-actions>

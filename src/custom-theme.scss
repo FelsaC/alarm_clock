@@ -20,7 +20,7 @@ $alarm_clock-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$alarm_clock-theme: mat.define-light-theme((
+$alarm_clock-theme: mat.define-dark-theme((
   color: (
     primary: $alarm_clock-primary,
     accent: $alarm_clock-accent,
