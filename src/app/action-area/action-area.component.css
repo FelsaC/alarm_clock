@@ -1,0 +1,38 @@
+
+.actionArea {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newAlarmButton {
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  color: var(--background);
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.newAlarmButton:hover {
+  background-color: var(--background);
+  color: var(--green);
+
+}
+
+.clearAll {
+  background-color: var(--danger) ;
+  border: 1px solid var(--danger);
+  color: var(--light);
+  font-size: 30px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+
+.clearAll:hover {
+
+  background-color: var(--background);
+  color: var(--danger)
+}

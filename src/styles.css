@@ -4,9 +4,9 @@
 :root {
   --background:#1E212B /*#3a3042*/;
   --grey: #7d8491;
-  --green: #D7EBBA;
+  --green: #88cc88;/*#D7EBBA;*/
   --light: #FEFFBE;
-  --danger: #EE7674;
+  --danger: #ff6b6b/*#EE7674*/;
 }
 
 body {

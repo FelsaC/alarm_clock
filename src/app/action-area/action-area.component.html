@@ -1,0 +1,4 @@
+  <form class="actionArea" [formGroup]="applyAlarm" (submit)="openDialog()">
+    <button class="newAlarmButton" type="submit">Novo alarme</button>
+    <button class="clearAll" *ngIf="ringingService.ringingList.length > 1" (click)="clear()"> Clear all</button>
+  </form>

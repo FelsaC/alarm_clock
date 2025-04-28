@@ -1,9 +1,5 @@
 <div>
-  <form [formGroup]="applyAlarm" (submit)="openDialog()">
-    <input type="text" formControlName="name"/>
-    <input type="datetime-local" formControlName="time" />
-    <button type="submit">Novo alarme</button>
-  </form>
+  <app-action-area/>
   <ul class="alarmList">
     <li class="listItem" *ngFor="let alarm of alarmsService.alarmsList; let index = index">
       <span>

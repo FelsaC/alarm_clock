@@ -1,16 +1,17 @@
 <mat-dialog-content [ngClass]="{ 'dark-backgroud': true }">
   <form [formGroup]="applyAlarm">
-    <input type="text" formControlName="name" />
-    <mat-calendar [(selected)]="selectedDay" />
+    <input class="inputAlarm" type="text" formControlName="name" placeholder="Nome para o alarme" />
     <input
       readonly
-      class="timeInputAlarm"
+      class="inputAlarm"
       [ngxTimepicker]="picker"
       [format]="24"
       placeholder="HH:MM Horas 🕐"
       formControlName="time"
     />
     <ngx-material-timepicker [theme]="alarmClock" #picker />
+    <mat-calendar [(selected)]="selectedDay" />
+    
   </form>
 </mat-dialog-content>
 <mat-dialog-actions [ngClass]="{ 'dark-backgroud': true }" align="end">
